@@ -11,10 +11,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 500px;
     min-width: 80vh;
     padding: clamp(35px,8%,70px);
+}
+
+main{
+    display: flex;
 }
 
 .logo{
@@ -32,6 +37,15 @@
     margin-bottom: 20px;
     width: 100%;
     display: block;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .input{
@@ -136,5 +150,42 @@
 }
 
 .button_login{
-    
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.button_login:disabled{
+    cursor: auto;
+    background-color: lightgray;
+}
+
+.bt{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.linksref{
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: lightgrey;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.wallpaper{
+    width: 100%;
+    background-image: url(./img/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
 }
